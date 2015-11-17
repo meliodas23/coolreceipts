@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/samplebg"
+    tools:context="com.solutions.ibarra.coolreceipts.Sign_Up_Page">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:inputType="textPersonName"
+        android:hint="@string/username"
+        android:ems="10"
+        android:textColorHint="#fff"
+        android:id="@+id/edtUsername"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:textColorHint="#fff"
+        android:hint="@string/password"
+        android:id="@+id/edtPassword"
+        android:layout_below="@+id/edtUsername"
+        android:layout_alignLeft="@+id/edtUsername"
+        android:layout_alignStart="@+id/edtUsername" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:textColorHint="#fff"
+        android:hint="@string/confirmpassword"
+        android:id="@+id/edtConfrimPassword"
+        android:layout_below="@+id/edtPassword"
+        android:layout_alignLeft="@+id/edtPassword"
+        android:layout_alignStart="@+id/edtPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/firstname"
+        android:ems="10"
+        android:textColorHint="#fff"
+        android:id="@+id/edtFirstname"
+        android:layout_below="@+id/edtConfrimPassword"
+        android:layout_alignLeft="@+id/edtConfrimPassword"
+        android:layout_alignStart="@+id/edtConfrimPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/middlename"
+        android:ems="10"
+        android:textColorHint="#fff"
+        android:id="@+id/edtMiddlename"
+        android:layout_below="@+id/edtFirstname"
+        android:layout_alignLeft="@+id/edtFirstname"
+        android:layout_alignStart="@+id/edtFirstname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/lastname"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:id="@+id/edtLastname"
+        android:layout_below="@+id/edtMiddlename"
+        android:layout_alignLeft="@+id/edtMiddlename"
+        android:layout_alignStart="@+id/edtMiddlename" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/border_white"
+            android:id="@+id/button_confirmaccount"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="left|bottom" />
+    </LinearLayout>
+
+</RelativeLayout>
